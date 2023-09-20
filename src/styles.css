@@ -10,4 +10,19 @@ body,
 }
 canvas{
     touch-action: none;
+    position: absolute;
+    z-index: 1;
 }
+
+.name{
+    color: rgb(146, 17, 233);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.biography
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
