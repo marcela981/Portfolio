@@ -1,15 +1,15 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "This projet is creatd only for study and present to my class",
-  "main": "index.js",
+  "name": "portfolio-Marcela-Mazo-C",
+  "version": "0.0.2",
+  "description": "This portfolio is created with the objective of learning, and in addition to being presented as the final project of the class.",
+  "main": "index.jsx",
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "vercel --prod"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Portfolio"],
+  "author": "Marcela Mazo Castro",
   "license": "ISC",
   "dependencies": {
     "@react-three/drei": "^9.84.2",
