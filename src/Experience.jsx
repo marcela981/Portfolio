@@ -1,8 +1,13 @@
 import { FirstPersonControls,OrbitControls,PointerLockControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
-import House from "./World/House";
-import  Car from "./World/Car"
+import Bus from "./World/Bus.jsx";
+import Sombrilla from "./World/Sombrilla.jsx";
+import Tapete from "./World/Tapete.jsx";
+import Dispensador from "./World/Dispensador.jsx";
+import Laptop from "./World/Laptop.jsx"
+import Mesa from "./World/Mesa.jsx"
+import Perro from "./World/Perro.jsx"
 
 
 const Experience = () => {
@@ -11,8 +16,15 @@ const Experience = () => {
             <OrbitControls makeDefault />
             <ambientLight intensity={0.5} />
             <directionalLight position={[10, 10, 5]} intensity={2} />
-            <House />
-            <Car position={[-2, 0.25, 10]} scale={0.017}/>
+            <Bus />
+            <Sombrilla position={[0.8, -2, -0.2]} rotation-y={-Math.PI * 0.18} scale={0.0098}/>
+            <Tapete position={[-0.8, -2, 0]}  rotation-y={-Math.PI * 0.48} scale={2}/>
+            <Dispensador position={[-3.15, -2, -3.4]}  rotation-y={-Math.PI * -0.22} scale={0.045}/>
+            <Laptop position={[-0.4, -2, -1.15]}  rotation-y={-Math.PI * 0.12} scale={0.02}/>
+            <Mesa position={[1.8, -2, -0.5]}  rotation-y={-Math.PI * 0.95} scale={0.5}/>
+            <Perro />
+
+        
             <mesh position-y={-2} rotation-x={-Math.PI / 2} >
                 <planeGeometry attach="geometry" args={[12, 12]} />
                 <meshStandardMaterial attach="material" color="green" />

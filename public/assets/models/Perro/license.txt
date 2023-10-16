@@ -1,0 +1,11 @@
+Model Information:
+* title:	Animated Dog, Shiba Inu
+* source:	https://sketchfab.com/3d-models/animated-dog-shiba-inu-9abfce885a834399b2c3ccaed51cd474
+* author:	quander (https://sketchfab.com/quander)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Animated Dog, Shiba Inu" (https://sketchfab.com/3d-models/animated-dog-shiba-inu-9abfce885a834399b2c3ccaed51cd474) by quander (https://sketchfab.com/quander) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
