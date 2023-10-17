@@ -16,9 +16,10 @@ const App = () => {
                 name={"Marcela Mazo Castro"} 
                     biography={"Frontend Developer"} 
             />
-            <Canvas
+           <Canvas
                 camera={cameraSettings}
-            >
+                shadows            >
+
                 <Experience />
             </Canvas>
         </>

@@ -14,7 +14,7 @@ const Bus = () => {
 
     return (
       
-            <mesh ref={busRef} position={[-4.9, -1.8, 1.5]} rotation-y={-Math.PI * 0.6} scale={0.009}>
+            <mesh ref={busRef} position={[-4.5, -1.8, 1.5]} rotation-y={-Math.PI * 0.6} scale={0.007}>
                 <primitive object={busModel.scene} />
             </mesh>
         
