@@ -1,17 +1,17 @@
 import { BakeShadows, ContactShadows, OrbitControls } from "@react-three/drei";
-import Bus from "./World/Bus.jsx";
-import { Sombrilla } from "./World/Sombrilla.jsx";
-import { Tapete } from "./World/Tapete.jsx";
-import { Dispensador } from "./World/Dispensador.jsx";
-import { Laptop } from "./World/Laptop.jsx"
-import { Mesa } from "./World/Mesa.jsx"
-import { Perro } from "./World/Perro.jsx"
-import Lights from "./World/Lights.jsx";
-import Environment from "./World/Environment.jsx"
+import Bus from "./Scenes/Welcome/Models/Bus.jsx";
+import { Sombrilla } from "./Scenes/Welcome/Models/Sombrilla.jsx";
+import { Tapete } from "./Scenes/Welcome/Models/Tapete.jsx";
+import { Dispensador } from "./Scenes/Welcome/Models/Dispensador.jsx";
+import { Laptop } from "./Scenes/Welcome/Models/Laptop.jsx"
+import { Mesa } from "./Scenes/Welcome/Models/Mesa.jsx"
+import { Perro } from "./Scenes/Welcome/Models/Perro.jsx"
+import Lights from "./Staging/Lights.jsx";
+import Environment from "./Staging/Environment.jsx"
 import { Perf } from "r3f-perf";
-import Floor from "./World/Floor.jsx";
-import Portfolio from "./World/Portfolio.jsx";
-import Welcome from "./World/Welcome.jsx";
+import Floor from "./Scenes/Welcome/Models/Floor.jsx";
+import Portfolio from "./Scenes/Welcome/Models/Portfolio.jsx";
+import Welcome from "./Scenes/Welcome/Welcome.jsx";
 
 
 
