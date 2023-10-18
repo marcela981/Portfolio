@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital@1&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 html,
 body,
 #root{
@@ -12,4 +16,80 @@ canvas{
     touch-action: none;
 }
 
+
+h1 {
+    text-align: center;
+    align-items: center;
+    margin-top: 8ch;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Bitter', serif;
+    letter-spacing: 0.2ch;
+    font-size: 7ch;
+}
+
+ul { 
+    margin: 5ch auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3ch;
+}
+
+li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+}
+
+a {
+    color: #464544;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #464544;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.welcome-text  {
+    background: #00000088;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+
+@media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+}
 

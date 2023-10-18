@@ -7,7 +7,7 @@ Title: Nuka Cola Vending Machine
 */
 
 import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, Html  } from "@react-three/drei";
 
 export function Dispensador(props) {
   const { nodes, materials } = useGLTF('/assets/models/Dispensador/nuka_cola_vending_machine.glb');
@@ -18,7 +18,9 @@ export function Dispensador(props) {
         receiveShadow
         geometry={nodes.vending_beyaz_0.geometry}
         material={materials.beyaz}
-      />
+      >
+      </mesh>
+      {props.children}
     </group>
   );
 }

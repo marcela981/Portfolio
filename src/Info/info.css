@@ -1,6 +1,6 @@
 .container-info{
     display: flex;
-    width: 35%;
+    width: 20%;
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -10,17 +10,19 @@
 }
 
 .card-info{
-    padding: 2rem;
+    margin-left: 4rem;
+    margin-top: 14rem;
     border-radius: 1rem;
     border-bottom: 8px solid #FF5733;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
+    
 }
 
 .name{
     color: rgb(146, 17, 233);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:xx-large;
+    font-size:large;
     font-style: italic;
     font-weight: bold;
 }
@@ -28,8 +30,9 @@
 .biography
 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+    font-size: medium;
     font-weight: bold;
+
 }
 
 

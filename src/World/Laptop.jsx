@@ -7,30 +7,89 @@ Title: Laptop
 */
 
 import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, Html } from "@react-three/drei";
 
 export function Laptop(props) {
   const { nodes, materials } = useGLTF('/assets/models/Laptop/laptop.glb');
+  const aboutMeRef = useRef();
+  const cameraRef = useRef();
+
+  const handleSign = (e, type) => {
+    // ...
+  }
+
+  const handleKeyboard = (e, type) => {
+    if (e.key === "A") {
+      // Movemos la cámara a la posición del elemento aboutMe
+      cameraRef.current.position.set(aboutMeRef.current.position.x, aboutMeRef.current.position.y, aboutMeRef.current.position.z);
+    }
+  }
+
   return (
     <group {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Frame_ComputerFrame_0.geometry}
-        material={materials.ComputerFrame}
-        position={[0, 0.976, 0]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        scale={100}
+        geometry={nodes.Cube.geometry}
+        material={nodes.Cube.material}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Screen_ComputerScreen_0.geometry}
-        material={materials.ComputerScreen}
-        position={[0, 0.65, -10.3]}
-        rotation={[Math.PI, 0, -Math.PI]}
-        scale={[100, 100, 88.235]}
+        //geometry={nodes.Screen.geometry}
+        //material={materials.Screen}
+        
+        
       />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Teclas.geometry}
+        material={materials.Keys}
+        onPointerMove={(e) => {handleKeyboard(e, "About Me") }}
+        name="aboutMe"
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Touchpad.geometry}
+        material={materials.Keys}
+        onPointerMove={(e) => {handleSign(e, "About Me") }}
+          name="aboutMe"
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.TouchpadBtns.geometry}
+        material={materials.Keys}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane005.geometry}
+        material={materials.grey}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane005_1.geometry}
+        material={materials.Black}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane007.geometry}
+        material={materials.Black}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane007_1.geometry}
+        material={materials.grey}
+      >
+
+      </mesh>
+      {props.children}
     </group>
   );
 }
